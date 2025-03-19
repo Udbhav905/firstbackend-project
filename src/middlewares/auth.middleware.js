@@ -25,6 +25,6 @@ export const varifyJWT = asyncHandler(async (req, _ , next) => {
     next();
   } catch (error) {
     throw new ApiError(401,error?.message)
-    console.log("Inavalid--->",error);
+    // console.log("Inavalid--->",error);
   }
 });
